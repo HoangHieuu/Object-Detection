@@ -52,7 +52,7 @@ if uploaded_files:
         img_array = np.array(image)
 
         # Show the original resized image
-        st.image(image, caption=f'Uploaded & Resized ({resize_width}x{resize_height})', use_column_width=True)
+        st.image(image, caption=f'Uploaded & Resized ({resize_width}x{resize_height})', use_container_width=True)
 
         # Run YOLO prediction
         st.write(f"Detecting objects with confidence > {confidence_threshold}")
