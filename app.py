@@ -62,7 +62,7 @@ if uploaded_files:
         result_img = results[0].plot()
 
         # Display result image
-        st.image(result_img, caption='Detected Objects', use_column_width=True)
+        st.image(result_img, caption='Detected Objects', use_container_width=True)
 
         # Extract detections
         names = results[0].names
